@@ -1,0 +1,16 @@
+App\Core\Common\Url Object
+(
+    [url:App\Core\Common\Url:private] => https://example.com/test.html
+)
+https://example.com/test.htmlArray
+(
+)
+App\Core\Common\Url Object
+(
+    [url:App\Core\Common\Url:private] => https://example.com/test.html
+)
+https://example.com/test.htmlArray
+(
+    [0] => https://example.com/test.html
+    [1] => https
+)

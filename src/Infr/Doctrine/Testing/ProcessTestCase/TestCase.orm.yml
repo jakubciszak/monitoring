@@ -1,0 +1,10 @@
+App\Core\Testing\TestCase:
+    type: embeddable
+    fields:
+        serviceId: { type: string },
+        type: { type: string },
+        group: { type: string },
+        method: { type: string },
+        url: { type: string },
+        parameters: { type: json },
+        

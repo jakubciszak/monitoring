@@ -1,0 +1,18 @@
+# to będzie mapowane na podstawie nazwy testu z app-service.yaml
+# {1}.{2}.{3}.{...}
+# {1} - nazwa grupy
+# {2} - nazwa testu
+# {3} i kolejne - argumenty przekazywane do testu
+
+# W sekcji "types" definiujemy klasy testujące dla poszczególnych typów serwisów (aktualnie testujemy tylko usługi http, ale w przyszłości mogą dojść ftp i inne.
+# Można zdefiniować test o tej samej nazwie (np. ping) dla każdego typu usługi. Dzięki zdefiniowaniu osobnych klas dla HTTP i FTP zostanie on obsłużony w odpowiedni sposób.
+assert:
+    status:
+        types:
+            http: 'App\Core\Testing\Tester\Http\StatusTester'
+            # tylko dla zobrazowania przykładu
+            ftp: 'App\Core\Testing\Tester\Ftp\StatusTester'
+    header:
+        types:
+            http: 'App\Core\Test\Assert\HttpHeader'
+        

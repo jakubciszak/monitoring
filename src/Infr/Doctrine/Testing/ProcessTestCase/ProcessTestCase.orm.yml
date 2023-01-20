@@ -1,0 +1,15 @@
+App\Core\Testing\ProcessTestCase:
+    type: entity
+    repositoryClass: App\Inf\Testing\Repository\ProcessTestCaseDbRepository
+    table: process_test_case
+    id:
+        processId:
+            type: uuid
+            generator:
+                strategy: CUSTOM
+            customIdGenerator:
+                class: Ramsey\Uuid\Doctrine\UuidGenerator
+    embedded:
+        testCase:
+            class: App\Core\Testing\TestCase
+            columnPrefix: false

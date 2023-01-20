@@ -1,0 +1,5 @@
+serwis1:
+    name: Serwis pierwszy
+    url: https://example.com/test.html
+    tests:
+        - assert.status.200
